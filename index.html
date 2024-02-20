@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="part-1">
+          <h2>Step 1: Your details</h2>
+          <fieldset class="fieldset">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="   First and last name"
+            />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="  example@domain.com"
+            />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="phone">Phone</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="   Eg. +91934875930993975097"
+            />
+          </fieldset>
+        </div>
+
+        <div class="part-2">
+          <h2>Step 2: Delivery address</h2>
+          <fieldset class="fieldset" style="height: 100px">
+            <label for="address">Address</label>
+            <textarea
+              name="address"
+              id="address"
+              style="height: 80px"
+            ></textarea>
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="p-code">Post code</label>
+            <input type="number" name="post code" id="p-code" />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" />
+          </fieldset>
+        </div>
+        <div class="part-3">
+          <h2>Step 3: Card details</h2>
+          <fieldset class="fieldset card">
+            <div class="card-type">
+              <div>
+                <label class="card-label"> Card type </label>
+              </div>
+              <div class="radio-btns">
+                <div class="cin">
+                  <input type="radio" name="visa" id="visa" />
+                  <div class="badge" id="visa">
+                    <img src="visa.png" alt="" />
+                  </div>
+                  <label for="visa">VISA</label>
+                </div>
+                <div class="cin">
+                  <input type="radio" name="amex" id="amex" />
+                  <div class="badge" id="amex">
+                    <img src="amex.png" alt="" />
+                  </div>
+                  <label for="amex">AmEx</label>
+                </div>
+                <div class="cin">
+                  <input type="radio" name="mastercard" id="mastercard" />
+                  <div class="badge" id="mastercard">
+                    <img src="mastercard.png" alt="" />
+                  </div>
+                  <label for="mastercard">Mastercard</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="card-num">Card number</label>
+            <input type="number" name="card-number" id="card-num" />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="security-code">Security code</label>
+            <input type="number" name="security-code" id="security-code" />
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="name_on_card">Name on card</label>
+            <input type="text" name="name_on_card" id="name_on_card" placeholder="Exact name as on the card" />
+          </fieldset>
+        </div>
+        <input type="submit" value="BUY IT!" id="button">
+      </form>
+    </div>
+  </body>
+</html>
